@@ -1,0 +1,16 @@
+[package]
+name = "thread-time"
+description = """
+    Small crate that provides CPU time measurement for threads.
+"""
+license = "MIT"
+readme = "README.md"
+keywords = ["cpu", "time", "thread", "cpu-time", "thread-time"]
+categories = ["api-bindings"]
+homepage = "https://github.com/hamptonmoore/thread-time"
+documentation = "https://docs.rs/thread-time"
+version = "1.0.0"
+authors = ["Hampton Moore <me@hamptonmoore.com>"]
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.43"
